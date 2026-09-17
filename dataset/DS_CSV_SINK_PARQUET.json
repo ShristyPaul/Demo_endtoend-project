@@ -1,0 +1,38 @@
+{
+	"name": "DS_CSV_SINK_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CSV_SINK_PARQUET",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"storage_account_loc": {
+					"value": "@dataset().storage_account_loc",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"storage_account_loc": {
+				"type": "string"
+			},
+			"directory": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n    dataset().directory,'/',\n    formatDateTime(utcNow(),'yyyy'),'/',\n    formatDateTime(utcNow(),'MM'),'/',\n    formatDateTime(utcNow(),'dd')\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

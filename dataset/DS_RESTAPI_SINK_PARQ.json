@@ -1,0 +1,53 @@
+{
+	"name": "DS_RESTAPI_SINK_PARQ",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_RESTAPI_SINK_PARQ",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n    'RestAPI','/',\n    formatDateTime(utcNow(),'yyyy'),'/',\n    formatDateTime(utcNow(),'MM'),'/',\n    formatDateTime(utcNow(),'dd')\n)\n\n\n",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_1",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_2",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_3",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_4",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_5",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_6",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

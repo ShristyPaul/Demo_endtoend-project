@@ -1,0 +1,15 @@
+{
+	"name": "ADF-DEV-Retail-ETL",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "39c0e6a5-63c0-4991-8e27-ad91c979e383",
+		"tenantId": "de79830b-6e31-4b2c-9c49-028d159c0d97"
+	}
+}

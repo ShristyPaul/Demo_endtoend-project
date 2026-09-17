@@ -1,0 +1,17 @@
+{
+	"name": "DS_EXCEL_SOURCE1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"strotsge": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevretail.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ1MjdBRUUyLUYyMUYtNDA5QS05MzUwLTk0QTY1NkUyQ0U5OF82NjgwZTg0Yi02NmVlLTQ2MjktYmMwMy1hYWUwMjM2YTZlMmQiDQp9"
+		}
+	}
+}
