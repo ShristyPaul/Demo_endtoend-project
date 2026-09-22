@@ -1,8 +1,8 @@
 {
-	"name": "DS_SFTP_Parquet",
+	"name": "DS_SFTP_SINK_PARQ_NEW",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_SFTP_ADLS_PARQUET",
+			"referenceName": "DS_SFTP_SINK_PARQ_NEW",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,12 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "olist_order_payments_dataset.csv",
+				"folderPath": "@concat(     'sftp','/',     formatDateTime(utcNow(),'yyyy'),'/',     formatDateTime(utcNow(),'MM'),'/',     formatDateTime(utcNow(),'dd') )",
 				"fileSystem": "input"
 			},
 			"compressionCodec": "snappy"
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

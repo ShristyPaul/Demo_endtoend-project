@@ -53,7 +53,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_SFTP_SINK_PARQ",
+						"referenceName": "DS_SFTP_SINK_PARQ_NEW",
 						"type": "DatasetReference"
 					}
 				]
