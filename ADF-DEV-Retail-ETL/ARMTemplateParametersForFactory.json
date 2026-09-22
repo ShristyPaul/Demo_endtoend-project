@@ -1,0 +1,177 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-DEV-Retail-ETL"
+		},
+		"DS_EXCEL_SINK_PARQ_accountKey": {
+			"value": ""
+		},
+		"DS_EXCEL_SOURCE1_accountKey": {
+			"value": ""
+		},
+		"DS_RESTAPI_SINK_PARQ_accountKey": {
+			"value": ""
+		},
+		"DS_SNOWFLAKE_PARQ_password": {
+			"value": ""
+		},
+		"DS_SNOWFLAKE_SINKADLS1_accountKey": {
+			"value": ""
+		},
+		"DS_SNOWFLAKE_SINK_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_AQSLDB_CSVEXCEL_password": {
+			"value": ""
+		},
+		"LS_AZSQL_password": {
+			"value": ""
+		},
+		"LS_AZSQLDB_CSV_META_password": {
+			"value": ""
+		},
+		"LS_AZSQLDB_METADATA_password": {
+			"value": ""
+		},
+		"LS_AZSQL_SRCDB_password": {
+			"value": ""
+		},
+		"LS_EXCEL_PARQ_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINK_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_SNOWFLAKE_SINK_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SNOWFLAKE_SOURCE_password": {
+			"value": ""
+		},
+		"lS_EXCEL_SOURCE_accountKey": {
+			"value": ""
+		},
+		"DS_SFTP_SINK_PARQ_NEW_accountKey": {
+			"value": ""
+		},
+		"DS_SFTP_ADLS_PARQ_NEW_accountKey": {
+			"value": ""
+		},
+		"DS_EXCEL_SINK_PARQ_properties_typeProperties_url": {
+			"value": "@{linkedService().storage_account_loc}"
+		},
+		"DS_EXCEL_SOURCE_properties_typeProperties_url": {
+			"value": "@{linkedService().storage_account_loc}"
+		},
+		"DS_EXCEL_SOURCE1_properties_typeProperties_url": {
+			"value": "https://adlsdevretail.dfs.core.windows.net/"
+		},
+		"DS_RESTAPI_SINK_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"DS_SNOWFLAKE_BLOB_PARQ_sasUri": {
+			"value": ""
+		},
+		"DS_SNOWFLAKE_PARQ_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"DS_SNOWFLAKE_SINKADLS1_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"DS_SNOWFLAKE_SINK_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"DS_SNOWFLAKE_SINK_PARQ_sasUri": {
+			"value": ""
+		},
+		"LS_AQSLDB_CSVEXCEL_properties_typeProperties_server": {
+			"value": "sql-srvr-demo-dev.database.windows.net"
+		},
+		"LS_AQSLDB_CSVEXCEL_properties_typeProperties_database": {
+			"value": "sql-db-demo-dev"
+		},
+		"LS_AQSLDB_CSVEXCEL_properties_typeProperties_userName": {
+			"value": "access-data-dev"
+		},
+		"LS_AZSQL_properties_typeProperties_server": {
+			"value": "sql-srvr-demo-dev.database.windows.net"
+		},
+		"LS_AZSQL_properties_typeProperties_database": {
+			"value": "sql-db-demo-dev"
+		},
+		"LS_AZSQL_properties_typeProperties_userName": {
+			"value": "access-data-dev"
+		},
+		"LS_AZSQLDB_CSV_META_properties_typeProperties_server": {
+			"value": "sql-srvr-demo-dev.database.windows.net"
+		},
+		"LS_AZSQLDB_CSV_META_properties_typeProperties_database": {
+			"value": "sql-db-demo-dev"
+		},
+		"LS_AZSQLDB_CSV_META_properties_typeProperties_userName": {
+			"value": "access-data-dev"
+		},
+		"LS_AZSQLDB_METADATA_properties_typeProperties_server": {
+			"value": "sql-srvr-demo-dev.database.windows.net"
+		},
+		"LS_AZSQLDB_METADATA_properties_typeProperties_database": {
+			"value": "sql-db-demo-dev"
+		},
+		"LS_AZSQLDB_METADATA_properties_typeProperties_userName": {
+			"value": "access-data-dev"
+		},
+		"LS_AZSQL_SRCDB_properties_typeProperties_server": {
+			"value": "sql-srvr-demo-dev.database.windows.net"
+		},
+		"LS_AZSQL_SRCDB_properties_typeProperties_database": {
+			"value": "sql-db-demo-dev"
+		},
+		"LS_AZSQL_SRCDB_properties_typeProperties_userName": {
+			"value": "access-data-dev"
+		},
+		"LS_CSV_SINK_PARQUET_properties_typeProperties_url": {
+			"value": "@{linkedService().storage_account_loc}"
+		},
+		"LS_EXCEL_PARQ_ADLS_properties_typeProperties_url": {
+			"value": "@{linkedService().storage_account_loc}"
+		},
+		"LS_RESTAPI_SOURCE_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/4v8ks1/data"
+		},
+		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevretail.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"LS_SNOWFLAKE_SINK_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"LS_SNOWFLAKE_SOURCE_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"LS_SOURCE_CSV_properties_typeProperties_url": {
+			"value": "@{linkedService().storage_account_loc}"
+		},
+		"lS_EXCEL_SOURCE_properties_typeProperties_url": {
+			"value": "https://adlsdevretail.dfs.core.windows.net/"
+		},
+		"Tr_sample_csv_properties_PL1_Master_parameters_Trigger": {
+			"value": "Tr_sample_csv"
+		},
+		"Tr_sample_excel_properties_PL1_Master_parameters_Trigger": {
+			"value": "Tr_sample_excel"
+		},
+		"DS_SFTP_SINK_PARQ_NEW_properties_typeProperties_url": {
+			"value": "https://adlsdemodevsource.dfs.core.windows.net/"
+		},
+		"DS_SFTP_ADLS_PARQ_NEW_properties_typeProperties_url": {
+			"value": "https://adlsdevretail.dfs.core.windows.net/"
+		}
+	}
+}
